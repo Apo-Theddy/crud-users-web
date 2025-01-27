@@ -34,13 +34,13 @@ const { isOpen } = defineProps({
 const newUser = ref({
   name: '',
   email: '',
-  age: 18
+  age: null
 });
 
 const addUser = () => {
   if (newUser.value.name === '' || newUser.value.email === '') return;
   emit('add', newUser.value);
-  newUser.value = { name: '', email: '', age: 18 };
+  newUser.value = { name: '', email: '', age: null };
 };
 
 const close = () => {

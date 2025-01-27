@@ -7,6 +7,8 @@
           class="w-full border border-gray-300 rounded-lg px-3 py-2" />
         <input v-model="user.email" type="email" placeholder="Correo"
           class="w-full border border-gray-300 rounded-lg px-3 py-2" />
+        <input v-model="user.age" type="number" placeholder="Edad"
+          class="w-full border border-gray-300 rounded-lg px-3 py-2" />
         <div class="flex justify-end space-x-2">
           <button @click="close" class="px-4 py-2 bg-gray-200 rounded-lg hover:bg-gray-300">
             Cancelar
